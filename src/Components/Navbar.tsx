@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import logo from '../../public/logo.png';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [active, setActive] = useState("hero");
@@ -22,9 +22,9 @@ const Navbar = () => {
 
   return (
     <nav className="fixed w-full bg-white shadow-lg z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
-        <div className="flex-shrink-0 font-bold text-2xl text-orange-500">Dingo</div>
-        
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-24
+      ">
+        <img src={logo} alt="Dingo Logo" className="w-20 " />
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8">
           {links.map((link) => (

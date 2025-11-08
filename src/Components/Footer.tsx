@@ -1,4 +1,5 @@
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import logo from '../../public/full-logo.png';
 
 const Footer = () => {
   const usefulLinks = ["Home", "About", "Services", "Projects", "Contact"];
@@ -13,8 +14,8 @@ const Footer = () => {
         
         {/* Logo & Description */}
         <div className="space-y-4 md:col-span-1">
-          <h3 className="text-2xl font-bold text-white">Dingo</h3>
-          <p className="text-gray-300 text-sm">
+          <img src={logo} alt="Dingo Logo" className="w-[200px] " />
+          <p className="text-gray-300">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.
           </p>
           {/* Social Icons */}
